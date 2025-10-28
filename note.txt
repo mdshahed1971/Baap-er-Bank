@@ -1,0 +1,3 @@
+const userPassword = document.getElementById('user-password');
+    const userPasswordValue = userPassword.value;
+    const convertedUserPassword = parseInt(userPasswordValue);
