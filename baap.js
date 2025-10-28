@@ -9,10 +9,12 @@ document.getElementById('btn-submit').addEventListener('click', function(event){
     if(userEmail.value === 'mdshahed19711@gmail.com'){
         
         if(convertedUserPassword===1234){
-            window.location.href= 'inside.html'
+            window.location.href= 'inside.html';
+            
         }
         else{
             alert('Invalid pin number')
+            
         }
     }
     else{
