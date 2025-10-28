@@ -1,3 +1,4 @@
+
 document.getElementById('btn-submit').addEventListener('click', function(event){
     event.preventDefault();
     const userEmail = document.getElementById('user-email');
@@ -5,8 +6,8 @@ document.getElementById('btn-submit').addEventListener('click', function(event){
     const userPasswordValue = userPassword.value;
     const convertedUserPassword = parseInt(userPasswordValue);
 
-    if(userEmail){
-        userEmail.value = 'mdshahed19711@gmail.com';
+    if(userEmail.value === 'mdshahed19711@gmail.com'){
+        
         if(convertedUserPassword===1234){
             window.location.href= 'inside.html'
         }
@@ -15,6 +16,6 @@ document.getElementById('btn-submit').addEventListener('click', function(event){
         }
     }
     else{
-        alert('Invalid email')
+        alert('Invalid email name')
     }
 })
