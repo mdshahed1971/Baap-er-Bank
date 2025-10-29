@@ -12,6 +12,11 @@ document.getElementById('btn-withdraw').addEventListener('click', function(){
     if(withdrawFiledValue){
         const newWithdrawTotal = convertedBalanceTotal - convertedWithdrawFiled;
         balanceTotal.innerText = newWithdrawTotal;
+        
+        if(convertedWithdrawFiled<0){
+            alert('Invalid balance to withdraw')
+        }
+        
     }
       const newWithdrawTotal = convertedWithdrawTotal + convertedWithdrawFiled;
       withdrawTotal.innerText = newWithdrawTotal;
