@@ -21,4 +21,5 @@ document.getElementById('btn-deposite').addEventListener('click', function(event
       depositeTotal.innerText = newDepositeTotal;
      
    }
+   
 })
