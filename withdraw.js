@@ -8,8 +8,13 @@ document.getElementById('btn-withdraw').addEventListener('click', function(){
     const balanceTotal = document.getElementById('balance-total');
     const balanceTotalValue = balanceTotal.innerText;
     const convertedBalanceTotal = parseFloat(balanceTotalValue);
-
-
+   
+  
+     if(convertedWithdrawFiled > convertedBalanceTotal){
+        alert('Insufficient balance to withdraw');
+        withdrawFiled.value = '';
+        return;
+    }
    if(convertedWithdrawFiled<0){
             alert('Invalid balance to withdraw');
             withdrawFiled.value = '';
