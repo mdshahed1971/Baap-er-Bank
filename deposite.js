@@ -11,17 +11,16 @@ document.getElementById('btn-deposite').addEventListener('click', function(event
    const convertedDepositeTotal = parseFloat(depositeTotalValue);
 
 
+  if(convertedDepositeFiled<0){
+      alert('Invalid balance to add');
+       depositeFiled.value = ''; 
+      return;
+   }
    if(depositeFiled){
    const newDeposite = convertedDepositeFiled + convertedBalanceTotal;
    balanceTotal.innerText = newDeposite;
-
-   if(convertedDepositeFiled<0){
-      alert('Invalid balance to add');
-      return;
-     
    }
    
-   }
    if(depositeTotal){
       const newDepositeTotal = convertedDepositeFiled + convertedDepositeTotal;
       depositeTotal.innerText = newDepositeTotal;
