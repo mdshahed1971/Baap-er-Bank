@@ -10,14 +10,19 @@ document.getElementById('btn-submit').addEventListener('click', function(event){
         
         if(convertedUserPassword===1234){
             window.location.href= 'inside.html';
-            
+            userEmail.value = '';
+            userPassword.value = '';
         }
         else{
-            alert('Invalid pin number')
-            
+            alert('Invalid pin number');
+            userEmail.value = '';
+           userPassword.value = '';
         }
     }
     else{
-        alert('Invalid email name')
+        alert('Invalid email name');
+        userEmail.value = '';
+        userPassword.value = '';
     }
+    
 })
